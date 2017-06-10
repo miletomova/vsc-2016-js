@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<button id="btn">Click Me</button>
+	<img src="smiley_happy.png">
+<script type="text/javascript">
+
+var button = document.getElementById('btn');
+var img = document.getElementsByTagName('img')[0];
+function onButtonClick(event) {
+console.log(img.src == 'smiley_sad.jpg');
+console.log(img.src);
+	if (img.src == 'file:///D:/VS-WEB-2016/level4/vsc-2016-js/05_events/smiley_sad.jpg') {
+	button.innerText = 'Click Me';
+	img.src = 'smiley_happy.png';
+
+} else {
+	button.innerText = 'Do Not';
+	img.src = 'smiley_sad.jpg';
+}
+}
+
+
+button.addEventListener("click", onButtonClick, false);
+
+	
+</script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form>
+		<input type="submit" name="submit">
+	</form>
+	<script type="text/javascript">
+		var submit = document.getElementsByTagName('input')[0];
+		submit.addEventListener('click', function(event){
+
+event.preventDefault();
+alert(submit);
+		});
+		
+	</script>
+</body>
+</html>
