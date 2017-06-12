@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+</head>
+<body>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+	<!-- <script type="text/javascript" src="jquery-3.2.1.min.js"></script> -->
+	<script type="text/javascript">
+		$('<button>') 
+		.addClass('btn-success') 
+		.html('Click me for success') 
+		.appendTo(document.body)
+		.on('click', onSuccessButtonClick);
+
+		console.log($('button'));
+
+		function onSuccessButtonClick(){
+			$('<div>').html('<p>I am newly created p-element</p>').appendTo(document.body);
+		}
+	</script>
+</body>
+</html>

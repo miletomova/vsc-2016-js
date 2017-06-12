@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+</head>
+<body>
+<div>
+	To be hidden
+</div>
+<div>
+	To be hidden 2
+</div>
+<ul>
+  <li>list item 1</li>
+  <li>list item 2</li>
+  <li class="third-item">list item 3</li>
+  <li>list item 4</li>
+  <li>list item 5</li>
+</ul>
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  -->
+	<script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+	var el = $('div').eq(0).next().fadeOut(8000);
+	console.log(el);
+
+$( "li" ).eq(2).css( "background-color", "red" );
+	
+//$('<p>Newly created p</p>').appendTo(el);
+// var sel = '.third-item';
+// if($(sel)){		
+// 	$('li').remove(sel);
+// }
+
+//		console.log($( "li.third-item" ).next());
+	</script>
+</body>
+</html>
