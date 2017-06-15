@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div>
+		text
+		<p>jQuery 1 is a library of the JavaScript functions that you're most likely 
+			to need as you develop websites.
+		</p>
+		<p>jQuery 2 is a library of the JavaScript functions that you're most likely 
+			to need as you develop websites.
+		</p>
+	</div>
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script>
+		$("div").click(function() {
+					$(this).children('div p:first-child').hide();
+
+    }); // end click
+</script>   
+</body>
+</html>

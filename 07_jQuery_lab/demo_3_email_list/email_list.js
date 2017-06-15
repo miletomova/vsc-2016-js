@@ -11,7 +11,9 @@ $(document).ready(function() {
 				isValid = false;
 			} else {
 				$("#email_address1_error").text("");
-			} 			
+			} 	
+
+					
 					
 			// submit the form if all entries are valid
 			if (isValid) {
