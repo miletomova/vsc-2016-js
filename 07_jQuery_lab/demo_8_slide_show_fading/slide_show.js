@@ -9,7 +9,7 @@ $(document).ready(function() {
         	$("#caption").fadeOut(1000);
         	$("#slide").fadeOut(1000,
            		function () {
-           	     	if (nextSlide.next().length == 0) {
+           	     	if (nextSlide.next().length === 0) {
 						nextSlide = $("#slides img:first-child");
 					}
 					else {

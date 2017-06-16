@@ -8,10 +8,10 @@ $(document).ready(function() {
 		// get value of current left property
 		leftProperty = parseInt(slider.css("left"));
 		// determine new value of left property
-		if (leftProperty - 300 <= -900) {
+		if (leftProperty - 100 <= -900) {
 			newLeftProperty = 0; }
 		else {
-			newLeftProperty = leftProperty - 300; }
+			newLeftProperty = leftProperty - 100; }
 		// use the animate function to change the left property
 		slider.animate( {left: newLeftProperty}, 1000);
 	});  // end click
@@ -19,14 +19,14 @@ $(document).ready(function() {
 	// the click event handler for the left button
 	$("#left_button").click(function() {
 		// get value of current right property
-		leftProperty = parseInt(slider.css("left"));
+		leftProperty = parseInt(slider.css("left"));//0
 		
 		// determine new value of left property
 		if (leftProperty < 0) {
-			newLeftProperty = leftProperty + 300;
+			newLeftProperty = leftProperty + 100;
 		}
 		else {
-			newLeftProperty = 0;
+			newLeftProperty = -600;
 		}
 		
 		// use the animate function to change the left property
