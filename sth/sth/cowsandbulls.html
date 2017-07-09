@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"></meta>
+	<title>Bulls&Cows</title>
+	<link rel="shortcut icon" href="cw.png" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+
+	<!--opens wrapper-->
+	<div id="wrapper1">
+		</div>
+		<!--closes wrapper-->
+
+			<!--opens wrapper-->
+		<div id="wrapper2">  
+			<!--opens game-->
+			<div id="game"> 
+				<input type="button" id="start" value="Start playing!">  
+				<br> 
+				<input type="text" id="guess" placeholder="Your Guess">
+				<br>
+				<input type="button" id="submit" value="Submit your guess." onclick="game()">
+				<br>
+				<p id="guesstext">Guesses:</p>
+				<p id="guesses"></p>
+				<p id="results"></p>
+				<input type="button" id="stop" value="Stop playing.">
+			</div>  
+			<!--closes game-->
+		</div>  
+		<!--closes wrapper-->
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>	
+</body>
+</html>
